@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+header, nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: red;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.project {
+  background-color: #333;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: red;
+}
+
+a:hover {
+  color: darkred;
+}
