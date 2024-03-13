@@ -1,41 +1,94 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  color: white;
-  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-header, nav ul {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  background-color: red;
+a {
+  color: #d63447;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #d63447;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1, header p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav ul {
+  padding: 0;
+  list-style: none;
+  background-color: #333;
+  text-align: center;
+  margin: 0;
 }
 
 nav ul li {
-  list-style: none;
+  display: inline;
 }
 
-nav ul li a {
+nav ul a {
+  display: inline-block;
+  padding: 10px;
   color: white;
-  text-decoration: none;
-  font-weight: bold;
 }
 
+/* Sections */
 section {
   padding: 20px;
   margin: 20px 0;
 }
 
-.project {
-  background-color: #333;
+/* Project and Experience Sections */
+.project, .experience {
+  background-color: #f4f4f4;
   padding: 10px;
   margin-bottom: 20px;
 }
 
-a {
-  color: red;
+/* Portfolio Section */
+#portfolio div {
+  margin-bottom: 20px;
 }
 
-a:hover {
-  color: darkred;
+/* Contact and Referees Sections */
+#contact, #referees {
+  background-color: #eaeaea;
+  padding: 10px;
+}
+
+#contact ul, #referees ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact li, #referees li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav ul li {
+      display: block;
+  }
+
+  nav ul a {
+      display: block;
+  }
 }
